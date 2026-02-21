@@ -10,6 +10,14 @@ Avaliação de Técnicas de Aumento de Dados para Classificação Binária de Im
 - Repositório: `knee-mri-augmentation-sbcas2026`  
 - Link: https://github.com/thallescotta/knee-mri-augmentation-sbcas2026
 
+
+---
+
+## Pipeline experimental
+
+**Figura 1.** Validação cruzada estratificada 5-fold (20% *outer_test*), com *inner_val* (15% do *outer_train*) dedicado ao *early stopping*. Aumento aplicado apenas no treino e teste final em dados originais. *Oversampling* desativado em todos os experimentos; desbalanceamento tratado via `pos_weight` na função de perda. Fonte: elaboração própria.
+![Pipeline experimental](PipelineV2.jpg)
+
 ---
 
 ## Artigo (SBCAS 2026)
