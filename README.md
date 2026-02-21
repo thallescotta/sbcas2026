@@ -7,10 +7,6 @@
 
 Avaliação de Técnicas de Aumento de Dados para Classificação Binária de Imagens volumétricas de Ressonância Magnética do Joelho.
 
-- Repositório: `knee-mri-augmentation-sbcas2026`  
-- Link: https://github.com/thallescotta/knee-mri-augmentation-sbcas2026
-
-
 ---
 
 ## Pipeline experimental
