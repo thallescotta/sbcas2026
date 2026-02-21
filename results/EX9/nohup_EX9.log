@@ -1,0 +1,225 @@
+nohup: ignoring input
+2026-02-19 07:39:34,346 | INFO | Run dir: /home/thalles.fontainha/2026-2/results/EX9/20260219-073934
+2026-02-19 07:39:34,346 | INFO | Device: cuda
+2026-02-19 07:39:34,346 | INFO | CUDA available: True
+2026-02-19 07:39:34,369 | INFO | CUDA device_count: 2
+2026-02-19 07:39:34,380 | INFO | GPU 0: NVIDIA GeForce RTX 2080 Ti
+2026-02-19 07:39:34,380 | INFO | GPU 1: NVIDIA GeForce RTX 2080 Ti
+2026-02-19 07:39:34,380 | INFO | Config multi_gpu=True | gpu_ids=(0, 1) | batch_size=32 | num_workers=4
+2026-02-19 07:39:34,380 | INFO | Etapa: copiando snapshot do código (.py) para auditoria...
+2026-02-19 07:39:34,421 | INFO | Snapshot concluído em 0.0min
+2026-02-19 07:39:34,421 | INFO | Etapa: carregando dataset base (sem transforms)...
+2026-02-19 07:40:08,707 | INFO | Dataset carregado em 0.6min | N=2976 | pos=1317 neg=1659
+2026-02-19 07:40:08,707 | INFO | Etapa: construindo preprocess (CPU) + augmentation_fn (GPU, só treino)...
+2026-02-19 07:40:08,707 | INFO | Preprocess/aug_fn prontos em 0.0min | aug_profile=strength_L3 | augmentation=True
+2026-02-19 07:40:08,707 | INFO | Etapa: gerando outer folds (n_splits=5)...
+2026-02-19 07:40:08,709 | INFO | Outer folds prontos em 0.0min
+2026-02-19 07:40:08,710 | INFO | Fold 1/5 | outer_train=2380 outer_test=596
+2026-02-19 07:40:08,711 | INFO | Fold 1: etapa inner split (inner_val_frac=0.15)...
+2026-02-19 07:40:08,713 | INFO | Fold 1: inner split concluído em 0.0min | inner_train=2023 inner_val=357
+2026-02-19 07:40:08,713 | INFO | Fold 1: etapa oversampling (treino) | enabled=False...
+2026-02-19 07:40:08,713 | INFO | Fold 1: oversampling concluído em 0.0min | inner_train_os=2023
+2026-02-19 07:40:08,713 | INFO | Fold 1: etapa criando DataLoaders (train/inner_val/outer_test)...
+2026-02-19 07:40:08,714 | INFO | Fold 1: DataLoaders prontos em 0.0min
+2026-02-19 07:40:08,722 | INFO | Fold 1: treino inner (early stopping) | pretrained=True amp=True multi_gpu=True gpu_ids=(0, 1)
+2026-02-19 07:41:13,356 | INFO | [Fold 1] Epoch 1/60 | train_loss=0.6010 | val_loss=0.5329 | val_auc=0.8672 | dt=63.8s | ETA=62.7min
+2026-02-19 07:42:10,979 | INFO | [Fold 1] Epoch 2/60 | train_loss=0.4730 | val_loss=0.6054 | val_auc=0.8619 | dt=57.5s | ETA=58.6min
+2026-02-19 07:43:11,036 | INFO | [Fold 1] Epoch 3/60 | train_loss=0.4044 | val_loss=0.6851 | val_auc=0.8881 | dt=60.1s | ETA=57.4min
+2026-02-19 07:44:13,822 | INFO | [Fold 1] Epoch 4/60 | train_loss=0.3742 | val_loss=0.5169 | val_auc=0.8774 | dt=62.8s | ETA=57.0min
+2026-02-19 07:45:15,138 | INFO | [Fold 1] Epoch 5/60 | train_loss=0.3701 | val_loss=0.8421 | val_auc=0.8842 | dt=61.2s | ETA=56.0min
+2026-02-19 07:46:17,582 | INFO | [Fold 1] Epoch 6/60 | train_loss=0.2901 | val_loss=0.6210 | val_auc=0.9010 | dt=62.4s | ETA=55.2min
+2026-02-19 07:47:20,084 | INFO | [Fold 1] Epoch 7/60 | train_loss=0.2458 | val_loss=0.5282 | val_auc=0.8885 | dt=62.5s | ETA=54.3min
+2026-02-19 07:48:24,572 | INFO | [Fold 1] Epoch 8/60 | train_loss=0.2464 | val_loss=0.7648 | val_auc=0.8721 | dt=64.5s | ETA=53.6min
+2026-02-19 07:49:27,974 | INFO | [Fold 1] Epoch 9/60 | train_loss=0.2215 | val_loss=5.1915 | val_auc=0.8619 | dt=63.4s | ETA=52.7min
+2026-02-19 07:50:31,246 | INFO | [Fold 1] Epoch 10/60 | train_loss=0.2033 | val_loss=0.4934 | val_auc=0.8994 | dt=63.3s | ETA=51.8min
+2026-02-19 07:51:36,105 | INFO | [Fold 1] Epoch 11/60 | train_loss=0.1914 | val_loss=1.1153 | val_auc=0.9052 | dt=64.7s | ETA=50.9min
+2026-02-19 07:52:40,224 | INFO | [Fold 1] Epoch 12/60 | train_loss=0.1516 | val_loss=0.5558 | val_auc=0.8865 | dt=64.1s | ETA=50.0min
+2026-02-19 07:53:45,634 | INFO | [Fold 1] Epoch 13/60 | train_loss=0.1575 | val_loss=0.8995 | val_auc=0.8646 | dt=65.4s | ETA=49.2min
+2026-02-19 07:54:50,253 | INFO | [Fold 1] Epoch 14/60 | train_loss=0.1293 | val_loss=0.8143 | val_auc=0.8935 | dt=64.6s | ETA=48.2min
+2026-02-19 07:55:55,465 | INFO | [Fold 1] Epoch 15/60 | train_loss=0.1232 | val_loss=0.5394 | val_auc=0.9003 | dt=65.2s | ETA=47.3min
+2026-02-19 07:56:59,883 | INFO | [Fold 1] Epoch 16/60 | train_loss=0.1445 | val_loss=0.7348 | val_auc=0.8991 | dt=64.4s | ETA=46.3min
+2026-02-19 07:58:05,337 | INFO | [Fold 1] Epoch 17/60 | train_loss=0.1142 | val_loss=2.1021 | val_auc=0.8953 | dt=65.5s | ETA=45.3min
+2026-02-19 07:59:11,361 | INFO | [Fold 1] Epoch 18/60 | train_loss=0.1172 | val_loss=0.5758 | val_auc=0.9030 | dt=66.0s | ETA=44.4min
+2026-02-19 08:00:16,524 | INFO | [Fold 1] Epoch 19/60 | train_loss=0.0952 | val_loss=0.6553 | val_auc=0.9046 | dt=65.2s | ETA=43.4min
+2026-02-19 08:01:22,094 | INFO | [Fold 1] Epoch 20/60 | train_loss=0.0879 | val_loss=0.5997 | val_auc=0.9069 | dt=65.6s | ETA=42.4min
+2026-02-19 08:01:22,094 | INFO | [Fold 1] Early stopping (patience=10) em epoch 20 | best=10
+2026-02-19 08:01:22,095 | INFO | Fold 1: treino inner concluído em 21.2min | best_epoch(inner)=10 | epochs_ran=20
+2026-02-19 08:01:22,095 | INFO | Fold 1: etapa retrain outer-train por 10 epochs...
+2026-02-19 08:02:34,374 | INFO | [Fold 1] [Retrain] Epoch 1/10 | train_loss=0.6045 | dt=71.9s
+2026-02-19 08:03:46,055 | INFO | [Fold 1] [Retrain] Epoch 2/10 | train_loss=0.4663 | dt=71.7s
+2026-02-19 08:04:59,601 | INFO | [Fold 1] [Retrain] Epoch 3/10 | train_loss=0.4104 | dt=73.5s
+2026-02-19 08:06:11,388 | INFO | [Fold 1] [Retrain] Epoch 4/10 | train_loss=0.3842 | dt=71.8s
+2026-02-19 08:07:25,433 | INFO | [Fold 1] [Retrain] Epoch 5/10 | train_loss=0.3262 | dt=74.0s
+2026-02-19 08:08:37,746 | INFO | [Fold 1] [Retrain] Epoch 6/10 | train_loss=0.3292 | dt=72.3s
+2026-02-19 08:09:48,777 | INFO | [Fold 1] [Retrain] Epoch 7/10 | train_loss=0.2470 | dt=71.0s
+2026-02-19 08:11:01,764 | INFO | [Fold 1] [Retrain] Epoch 8/10 | train_loss=0.2559 | dt=73.0s
+2026-02-19 08:12:14,810 | INFO | [Fold 1] [Retrain] Epoch 9/10 | train_loss=0.2505 | dt=73.0s
+2026-02-19 08:13:26,974 | INFO | [Fold 1] [Retrain] Epoch 10/10 | train_loss=0.2039 | dt=72.2s
+2026-02-19 08:13:26,974 | INFO | Fold 1: retrain concluído em 12.1min
+2026-02-19 08:13:26,974 | INFO | Fold 1: etapa avaliação outer-test (unseen data)...
+2026-02-19 08:13:36,285 | INFO | [Fold 1] Outer-test | loss=0.9309 | auc=0.8970 | acc=0.7651 | f1=0.6667
+2026-02-19 08:13:36,285 | INFO | Fold 1: avaliação concluída em 0.2min
+2026-02-19 08:13:36,285 | INFO | Fold 1/5 finalizado | tempo_fold=33.5min | elapsed=34.0min | ETA_restante≈133.3min
+2026-02-19 08:13:36,285 | INFO | Fold 2/5 | outer_train=2381 outer_test=595
+2026-02-19 08:13:36,286 | INFO | Fold 2: etapa inner split (inner_val_frac=0.15)...
+2026-02-19 08:13:36,288 | INFO | Fold 2: inner split concluído em 0.0min | inner_train=2023 inner_val=358
+2026-02-19 08:13:36,288 | INFO | Fold 2: etapa oversampling (treino) | enabled=False...
+2026-02-19 08:13:36,288 | INFO | Fold 2: oversampling concluído em 0.0min | inner_train_os=2023
+2026-02-19 08:13:36,288 | INFO | Fold 2: etapa criando DataLoaders (train/inner_val/outer_test)...
+2026-02-19 08:13:36,391 | INFO | Fold 2: DataLoaders prontos em 0.0min
+2026-02-19 08:13:36,391 | INFO | Fold 2: treino inner (early stopping) | pretrained=True amp=True multi_gpu=True gpu_ids=(0, 1)
+2026-02-19 08:14:42,444 | INFO | [Fold 2] Epoch 1/60 | train_loss=0.5910 | val_loss=0.7996 | val_auc=0.8482 | dt=65.7s | ETA=64.6min
+2026-02-19 08:15:48,881 | INFO | [Fold 2] Epoch 2/60 | train_loss=0.4636 | val_loss=0.9305 | val_auc=0.8660 | dt=66.3s | ETA=63.8min
+2026-02-19 08:16:53,672 | INFO | [Fold 2] Epoch 3/60 | train_loss=0.4098 | val_loss=0.7580 | val_auc=0.8603 | dt=64.8s | ETA=62.3min
+2026-02-19 08:17:59,035 | INFO | [Fold 2] Epoch 4/60 | train_loss=0.3802 | val_loss=0.5101 | val_auc=0.8909 | dt=65.2s | ETA=61.1min
+2026-02-19 08:19:05,127 | INFO | [Fold 2] Epoch 5/60 | train_loss=0.3521 | val_loss=1.1061 | val_auc=0.8563 | dt=65.9s | ETA=60.1min
+2026-02-19 08:20:10,781 | INFO | [Fold 2] Epoch 6/60 | train_loss=0.3311 | val_loss=1.5803 | val_auc=0.8667 | dt=65.7s | ETA=59.0min
+2026-02-19 08:21:18,516 | INFO | [Fold 2] Epoch 7/60 | train_loss=0.2963 | val_loss=0.9895 | val_auc=0.8895 | dt=67.7s | ETA=58.2min
+2026-02-19 08:22:24,412 | INFO | [Fold 2] Epoch 8/60 | train_loss=0.2416 | val_loss=2.2145 | val_auc=0.8692 | dt=65.9s | ETA=57.1min
+2026-02-19 08:23:31,039 | INFO | [Fold 2] Epoch 9/60 | train_loss=0.2355 | val_loss=0.7872 | val_auc=0.8807 | dt=66.6s | ETA=56.1min
+2026-02-19 08:24:37,341 | INFO | [Fold 2] Epoch 10/60 | train_loss=0.1973 | val_loss=1.1539 | val_auc=0.8719 | dt=66.3s | ETA=55.0min
+2026-02-19 08:25:44,384 | INFO | [Fold 2] Epoch 11/60 | train_loss=0.1733 | val_loss=0.7284 | val_auc=0.8738 | dt=67.0s | ETA=54.0min
+2026-02-19 08:26:51,141 | INFO | [Fold 2] Epoch 12/60 | train_loss=0.1768 | val_loss=0.5955 | val_auc=0.8873 | dt=66.8s | ETA=52.9min
+2026-02-19 08:27:57,253 | INFO | [Fold 2] Epoch 13/60 | train_loss=0.1619 | val_loss=1.2913 | val_auc=0.8751 | dt=66.1s | ETA=51.8min
+2026-02-19 08:29:03,845 | INFO | [Fold 2] Epoch 14/60 | train_loss=0.1616 | val_loss=1.1765 | val_auc=0.8597 | dt=66.6s | ETA=50.7min
+2026-02-19 08:29:03,845 | INFO | [Fold 2] Early stopping (patience=10) em epoch 14 | best=4
+2026-02-19 08:29:03,845 | INFO | Fold 2: treino inner concluído em 15.5min | best_epoch(inner)=4 | epochs_ran=14
+2026-02-19 08:29:03,846 | INFO | Fold 2: etapa retrain outer-train por 4 epochs...
+2026-02-19 08:30:16,549 | INFO | [Fold 2] [Retrain] Epoch 1/4 | train_loss=0.5953 | dt=72.3s
+2026-02-19 08:31:31,308 | INFO | [Fold 2] [Retrain] Epoch 2/4 | train_loss=0.4802 | dt=74.8s
+2026-02-19 08:32:44,193 | INFO | [Fold 2] [Retrain] Epoch 3/4 | train_loss=0.4238 | dt=72.9s
+2026-02-19 08:33:57,565 | INFO | [Fold 2] [Retrain] Epoch 4/4 | train_loss=0.4041 | dt=73.4s
+2026-02-19 08:33:57,566 | INFO | Fold 2: retrain concluído em 4.9min
+2026-02-19 08:33:57,566 | INFO | Fold 2: etapa avaliação outer-test (unseen data)...
+2026-02-19 08:34:05,657 | INFO | [Fold 2] Outer-test | loss=0.6920 | auc=0.9133 | acc=0.7782 | f1=0.6842
+2026-02-19 08:34:05,657 | INFO | Fold 2: avaliação concluída em 0.1min
+2026-02-19 08:34:05,658 | INFO | Fold 2/5 finalizado | tempo_fold=20.5min | elapsed=54.5min | ETA_restante≈80.4min
+2026-02-19 08:34:05,658 | INFO | Fold 3/5 | outer_train=2381 outer_test=595
+2026-02-19 08:34:05,659 | INFO | Fold 3: etapa inner split (inner_val_frac=0.15)...
+2026-02-19 08:34:05,661 | INFO | Fold 3: inner split concluído em 0.0min | inner_train=2023 inner_val=358
+2026-02-19 08:34:05,661 | INFO | Fold 3: etapa oversampling (treino) | enabled=False...
+2026-02-19 08:34:05,661 | INFO | Fold 3: oversampling concluído em 0.0min | inner_train_os=2023
+2026-02-19 08:34:05,661 | INFO | Fold 3: etapa criando DataLoaders (train/inner_val/outer_test)...
+2026-02-19 08:34:05,785 | INFO | Fold 3: DataLoaders prontos em 0.0min
+2026-02-19 08:34:05,785 | INFO | Fold 3: treino inner (early stopping) | pretrained=True amp=True multi_gpu=True gpu_ids=(0, 1)
+2026-02-19 08:35:11,537 | INFO | [Fold 3] Epoch 1/60 | train_loss=0.6104 | val_loss=0.4994 | val_auc=0.8949 | dt=65.4s | ETA=64.3min
+2026-02-19 08:36:17,839 | INFO | [Fold 3] Epoch 2/60 | train_loss=0.4931 | val_loss=0.6445 | val_auc=0.8983 | dt=66.2s | ETA=63.6min
+2026-02-19 08:37:24,704 | INFO | [Fold 3] Epoch 3/60 | train_loss=0.4408 | val_loss=0.6194 | val_auc=0.9102 | dt=66.9s | ETA=62.8min
+2026-02-19 08:38:32,038 | INFO | [Fold 3] Epoch 4/60 | train_loss=0.3856 | val_loss=0.5281 | val_auc=0.9130 | dt=67.3s | ETA=62.0min
+2026-02-19 08:39:38,978 | INFO | [Fold 3] Epoch 5/60 | train_loss=0.3435 | val_loss=1.5876 | val_auc=0.9171 | dt=66.9s | ETA=61.0min
+2026-02-19 08:40:45,641 | INFO | [Fold 3] Epoch 6/60 | train_loss=0.3152 | val_loss=0.6499 | val_auc=0.9062 | dt=66.7s | ETA=59.9min
+2026-02-19 08:41:52,225 | INFO | [Fold 3] Epoch 7/60 | train_loss=0.2871 | val_loss=0.4687 | val_auc=0.9181 | dt=66.6s | ETA=58.8min
+2026-02-19 08:42:58,664 | INFO | [Fold 3] Epoch 8/60 | train_loss=0.2746 | val_loss=0.4340 | val_auc=0.9165 | dt=66.3s | ETA=57.7min
+2026-02-19 08:44:05,595 | INFO | [Fold 3] Epoch 9/60 | train_loss=0.2076 | val_loss=0.5365 | val_auc=0.9071 | dt=66.8s | ETA=56.6min
+2026-02-19 08:45:12,702 | INFO | [Fold 3] Epoch 10/60 | train_loss=0.1984 | val_loss=1.1734 | val_auc=0.9200 | dt=67.1s | ETA=55.5min
+2026-02-19 08:46:17,650 | INFO | [Fold 3] Epoch 11/60 | train_loss=0.2089 | val_loss=1.9554 | val_auc=0.9017 | dt=64.9s | ETA=54.3min
+2026-02-19 08:47:23,782 | INFO | [Fold 3] Epoch 12/60 | train_loss=0.1497 | val_loss=0.5072 | val_auc=0.9328 | dt=66.1s | ETA=53.1min
+2026-02-19 08:48:31,627 | INFO | [Fold 3] Epoch 13/60 | train_loss=0.1587 | val_loss=0.5856 | val_auc=0.9125 | dt=67.8s | ETA=52.1min
+2026-02-19 08:49:39,314 | INFO | [Fold 3] Epoch 14/60 | train_loss=0.1436 | val_loss=0.5812 | val_auc=0.9189 | dt=67.7s | ETA=51.1min
+2026-02-19 08:50:45,055 | INFO | [Fold 3] Epoch 15/60 | train_loss=0.1451 | val_loss=0.5327 | val_auc=0.9144 | dt=65.7s | ETA=49.9min
+2026-02-19 08:51:50,713 | INFO | [Fold 3] Epoch 16/60 | train_loss=0.1534 | val_loss=0.5965 | val_auc=0.8928 | dt=65.7s | ETA=48.8min
+2026-02-19 08:52:57,207 | INFO | [Fold 3] Epoch 17/60 | train_loss=0.1248 | val_loss=0.6241 | val_auc=0.9171 | dt=66.5s | ETA=47.7min
+2026-02-19 08:54:04,475 | INFO | [Fold 3] Epoch 18/60 | train_loss=0.1028 | val_loss=0.5039 | val_auc=0.9179 | dt=67.3s | ETA=46.6min
+2026-02-19 08:54:04,475 | INFO | [Fold 3] Early stopping (patience=10) em epoch 18 | best=8
+2026-02-19 08:54:04,476 | INFO | Fold 3: treino inner concluído em 20.0min | best_epoch(inner)=8 | epochs_ran=18
+2026-02-19 08:54:04,476 | INFO | Fold 3: etapa retrain outer-train por 8 epochs...
+2026-02-19 08:57:55,031 | INFO | [Fold 3] [Retrain] Epoch 1/8 | train_loss=0.5918 | dt=230.2s
+2026-02-19 09:00:59,368 | INFO | [Fold 3] [Retrain] Epoch 2/8 | train_loss=0.4585 | dt=184.3s
+2026-02-19 09:04:03,379 | INFO | [Fold 3] [Retrain] Epoch 3/8 | train_loss=0.4087 | dt=184.0s
+2026-02-19 09:07:06,659 | INFO | [Fold 3] [Retrain] Epoch 4/8 | train_loss=0.3905 | dt=183.3s
+2026-02-19 09:10:10,790 | INFO | [Fold 3] [Retrain] Epoch 5/8 | train_loss=0.3495 | dt=184.1s
+2026-02-19 09:13:13,468 | INFO | [Fold 3] [Retrain] Epoch 6/8 | train_loss=0.2951 | dt=182.7s
+2026-02-19 09:16:16,201 | INFO | [Fold 3] [Retrain] Epoch 7/8 | train_loss=0.3119 | dt=182.7s
+2026-02-19 09:19:19,806 | INFO | [Fold 3] [Retrain] Epoch 8/8 | train_loss=0.2445 | dt=183.6s
+2026-02-19 09:19:19,807 | INFO | Fold 3: retrain concluído em 25.3min
+2026-02-19 09:19:19,807 | INFO | Fold 3: etapa avaliação outer-test (unseen data)...
+2026-02-19 09:19:26,349 | INFO | [Fold 3] Outer-test | loss=0.7797 | auc=0.8907 | acc=0.7782 | f1=0.7027
+2026-02-19 09:19:26,349 | INFO | Fold 3: avaliação concluída em 0.1min
+2026-02-19 09:19:26,349 | INFO | Fold 3/5 finalizado | tempo_fold=45.3min | elapsed=99.9min | ETA_restante≈65.6min
+2026-02-19 09:19:26,350 | INFO | Fold 4/5 | outer_train=2381 outer_test=595
+2026-02-19 09:19:26,351 | INFO | Fold 4: etapa inner split (inner_val_frac=0.15)...
+2026-02-19 09:19:26,353 | INFO | Fold 4: inner split concluído em 0.0min | inner_train=2023 inner_val=358
+2026-02-19 09:19:26,353 | INFO | Fold 4: etapa oversampling (treino) | enabled=False...
+2026-02-19 09:19:26,353 | INFO | Fold 4: oversampling concluído em 0.0min | inner_train_os=2023
+2026-02-19 09:19:26,353 | INFO | Fold 4: etapa criando DataLoaders (train/inner_val/outer_test)...
+2026-02-19 09:19:26,476 | INFO | Fold 4: DataLoaders prontos em 0.0min
+2026-02-19 09:19:26,477 | INFO | Fold 4: treino inner (early stopping) | pretrained=True amp=True multi_gpu=True gpu_ids=(0, 1)
+2026-02-19 09:22:07,908 | INFO | [Fold 4] Epoch 1/60 | train_loss=0.6053 | val_loss=0.5063 | val_auc=0.8771 | dt=161.0s | ETA=158.4min
+2026-02-19 09:24:48,378 | INFO | [Fold 4] Epoch 2/60 | train_loss=0.4884 | val_loss=0.4693 | val_auc=0.8955 | dt=160.4s | ETA=155.4min
+2026-02-19 09:27:28,121 | INFO | [Fold 4] Epoch 3/60 | train_loss=0.4387 | val_loss=0.5319 | val_auc=0.9029 | dt=159.6s | ETA=152.3min
+2026-02-19 09:30:08,193 | INFO | [Fold 4] Epoch 4/60 | train_loss=0.3612 | val_loss=0.5474 | val_auc=0.9031 | dt=160.1s | ETA=149.6min
+2026-02-19 09:32:48,859 | INFO | [Fold 4] Epoch 5/60 | train_loss=0.3664 | val_loss=1.0701 | val_auc=0.9021 | dt=160.7s | ETA=147.0min
+2026-02-19 09:35:28,763 | INFO | [Fold 4] Epoch 6/60 | train_loss=0.2973 | val_loss=0.7108 | val_auc=0.9141 | dt=159.9s | ETA=144.2min
+2026-02-19 09:38:09,270 | INFO | [Fold 4] Epoch 7/60 | train_loss=0.3019 | val_loss=2.1776 | val_auc=0.9084 | dt=160.5s | ETA=141.6min
+2026-02-19 09:40:49,861 | INFO | [Fold 4] Epoch 8/60 | train_loss=0.2453 | val_loss=0.9559 | val_auc=0.8948 | dt=160.6s | ETA=139.0min
+2026-02-19 09:43:30,947 | INFO | [Fold 4] Epoch 9/60 | train_loss=0.2436 | val_loss=0.8499 | val_auc=0.8997 | dt=161.1s | ETA=136.4min
+2026-02-19 09:46:11,210 | INFO | [Fold 4] Epoch 10/60 | train_loss=0.2239 | val_loss=0.8658 | val_auc=0.9133 | dt=160.3s | ETA=133.7min
+2026-02-19 09:48:51,973 | INFO | [Fold 4] Epoch 11/60 | train_loss=0.1716 | val_loss=0.5672 | val_auc=0.9038 | dt=160.8s | ETA=131.0min
+2026-02-19 09:51:31,876 | INFO | [Fold 4] Epoch 12/60 | train_loss=0.1737 | val_loss=1.0101 | val_auc=0.8960 | dt=159.9s | ETA=128.3min
+2026-02-19 09:51:31,876 | INFO | [Fold 4] Early stopping (patience=10) em epoch 12 | best=2
+2026-02-19 09:51:31,876 | INFO | Fold 4: treino inner concluído em 32.1min | best_epoch(inner)=2 | epochs_ran=12
+2026-02-19 09:51:31,877 | INFO | Fold 4: etapa retrain outer-train por 2 epochs...
+2026-02-19 09:54:36,037 | INFO | [Fold 4] [Retrain] Epoch 1/2 | train_loss=0.5818 | dt=183.8s
+2026-02-19 09:57:40,236 | INFO | [Fold 4] [Retrain] Epoch 2/2 | train_loss=0.4547 | dt=184.2s
+2026-02-19 09:57:40,236 | INFO | Fold 4: retrain concluído em 6.1min
+2026-02-19 09:57:40,237 | INFO | Fold 4: etapa avaliação outer-test (unseen data)...
+2026-02-19 09:57:47,544 | INFO | [Fold 4] Outer-test | loss=0.5825 | auc=0.8844 | acc=0.7613 | f1=0.7774
+2026-02-19 09:57:47,544 | INFO | Fold 4: avaliação concluída em 0.1min
+2026-02-19 09:57:47,544 | INFO | Fold 4/5 finalizado | tempo_fold=38.4min | elapsed=138.2min | ETA_restante≈33.8min
+2026-02-19 09:57:47,544 | INFO | Fold 5/5 | outer_train=2381 outer_test=595
+2026-02-19 09:57:47,545 | INFO | Fold 5: etapa inner split (inner_val_frac=0.15)...
+2026-02-19 09:57:47,547 | INFO | Fold 5: inner split concluído em 0.0min | inner_train=2023 inner_val=358
+2026-02-19 09:57:47,547 | INFO | Fold 5: etapa oversampling (treino) | enabled=False...
+2026-02-19 09:57:47,547 | INFO | Fold 5: oversampling concluído em 0.0min | inner_train_os=2023
+2026-02-19 09:57:47,547 | INFO | Fold 5: etapa criando DataLoaders (train/inner_val/outer_test)...
+2026-02-19 09:57:47,675 | INFO | Fold 5: DataLoaders prontos em 0.0min
+2026-02-19 09:57:47,675 | INFO | Fold 5: treino inner (early stopping) | pretrained=True amp=True multi_gpu=True gpu_ids=(0, 1)
+2026-02-19 10:00:28,555 | INFO | [Fold 5] Epoch 1/60 | train_loss=0.6042 | val_loss=1.2908 | val_auc=0.8503 | dt=160.5s | ETA=157.8min
+2026-02-19 10:03:09,222 | INFO | [Fold 5] Epoch 2/60 | train_loss=0.5069 | val_loss=1.3604 | val_auc=0.8996 | dt=160.6s | ETA=155.2min
+2026-02-19 10:05:50,363 | INFO | [Fold 5] Epoch 3/60 | train_loss=0.4393 | val_loss=0.8152 | val_auc=0.8947 | dt=161.1s | ETA=152.7min
+2026-02-19 10:08:31,217 | INFO | [Fold 5] Epoch 4/60 | train_loss=0.3810 | val_loss=2.0784 | val_auc=0.8740 | dt=160.7s | ETA=150.0min
+2026-02-19 10:11:11,811 | INFO | [Fold 5] Epoch 5/60 | train_loss=0.3456 | val_loss=0.8460 | val_auc=0.8881 | dt=160.6s | ETA=147.3min
+2026-02-19 10:13:52,892 | INFO | [Fold 5] Epoch 6/60 | train_loss=0.3055 | val_loss=2.0840 | val_auc=0.8808 | dt=161.1s | ETA=144.7min
+2026-02-19 10:16:33,996 | INFO | [Fold 5] Epoch 7/60 | train_loss=0.2755 | val_loss=0.6631 | val_auc=0.9021 | dt=161.1s | ETA=142.1min
+2026-02-19 10:19:14,621 | INFO | [Fold 5] Epoch 8/60 | train_loss=0.2547 | val_loss=1.6058 | val_auc=0.9006 | dt=160.5s | ETA=139.3min
+2026-02-19 10:21:56,088 | INFO | [Fold 5] Epoch 9/60 | train_loss=0.2541 | val_loss=1.2247 | val_auc=0.9030 | dt=161.5s | ETA=136.7min
+2026-02-19 10:24:36,359 | INFO | [Fold 5] Epoch 10/60 | train_loss=0.2157 | val_loss=0.7955 | val_auc=0.8893 | dt=160.3s | ETA=134.0min
+2026-02-19 10:27:16,394 | INFO | [Fold 5] Epoch 11/60 | train_loss=0.1765 | val_loss=1.9340 | val_auc=0.8771 | dt=160.0s | ETA=131.3min
+2026-02-19 10:29:56,548 | INFO | [Fold 5] Epoch 12/60 | train_loss=0.1927 | val_loss=1.0464 | val_auc=0.8680 | dt=160.2s | ETA=128.5min
+2026-02-19 10:32:37,332 | INFO | [Fold 5] Epoch 13/60 | train_loss=0.1784 | val_loss=0.7131 | val_auc=0.8932 | dt=160.8s | ETA=125.9min
+2026-02-19 10:35:17,429 | INFO | [Fold 5] Epoch 14/60 | train_loss=0.1194 | val_loss=0.5853 | val_auc=0.9018 | dt=160.1s | ETA=123.2min
+2026-02-19 10:37:57,693 | INFO | [Fold 5] Epoch 15/60 | train_loss=0.1427 | val_loss=2.5005 | val_auc=0.9038 | dt=160.1s | ETA=120.5min
+2026-02-19 10:40:38,409 | INFO | [Fold 5] Epoch 16/60 | train_loss=0.1400 | val_loss=2.0563 | val_auc=0.9067 | dt=160.7s | ETA=117.8min
+2026-02-19 10:43:19,054 | INFO | [Fold 5] Epoch 17/60 | train_loss=0.1074 | val_loss=0.7089 | val_auc=0.9113 | dt=160.6s | ETA=115.1min
+2026-02-19 10:45:59,309 | INFO | [Fold 5] Epoch 18/60 | train_loss=0.1056 | val_loss=2.7733 | val_auc=0.8979 | dt=160.3s | ETA=112.4min
+2026-02-19 10:48:40,833 | INFO | [Fold 5] Epoch 19/60 | train_loss=0.1143 | val_loss=0.9596 | val_auc=0.8979 | dt=161.5s | ETA=109.8min
+2026-02-19 10:51:21,453 | INFO | [Fold 5] Epoch 20/60 | train_loss=0.0807 | val_loss=0.6932 | val_auc=0.9105 | dt=160.6s | ETA=107.1min
+2026-02-19 10:54:01,367 | INFO | [Fold 5] Epoch 21/60 | train_loss=0.0761 | val_loss=0.6099 | val_auc=0.9147 | dt=159.9s | ETA=104.4min
+2026-02-19 10:56:42,945 | INFO | [Fold 5] Epoch 22/60 | train_loss=0.1065 | val_loss=0.8475 | val_auc=0.9040 | dt=161.6s | ETA=101.7min
+2026-02-19 10:59:23,931 | INFO | [Fold 5] Epoch 23/60 | train_loss=0.1052 | val_loss=0.8736 | val_auc=0.9048 | dt=161.0s | ETA=99.1min
+2026-02-19 11:02:04,446 | INFO | [Fold 5] Epoch 24/60 | train_loss=0.0833 | val_loss=2.3201 | val_auc=0.9057 | dt=160.5s | ETA=96.4min
+2026-02-19 11:02:04,446 | INFO | [Fold 5] Early stopping (patience=10) em epoch 24 | best=14
+2026-02-19 11:02:04,447 | INFO | Fold 5: treino inner concluído em 64.3min | best_epoch(inner)=14 | epochs_ran=24
+2026-02-19 11:02:04,447 | INFO | Fold 5: etapa retrain outer-train por 14 epochs...
+2026-02-19 11:05:09,706 | INFO | [Fold 5] [Retrain] Epoch 1/14 | train_loss=0.5771 | dt=184.8s
+2026-02-19 11:08:14,036 | INFO | [Fold 5] [Retrain] Epoch 2/14 | train_loss=0.4973 | dt=184.3s
+2026-02-19 11:11:17,846 | INFO | [Fold 5] [Retrain] Epoch 3/14 | train_loss=0.4326 | dt=183.8s
+2026-02-19 11:14:21,584 | INFO | [Fold 5] [Retrain] Epoch 4/14 | train_loss=0.3818 | dt=183.7s
+2026-02-19 11:17:24,489 | INFO | [Fold 5] [Retrain] Epoch 5/14 | train_loss=0.3445 | dt=182.9s
+2026-02-19 11:20:28,519 | INFO | [Fold 5] [Retrain] Epoch 6/14 | train_loss=0.3266 | dt=184.0s
+2026-02-19 11:23:31,916 | INFO | [Fold 5] [Retrain] Epoch 7/14 | train_loss=0.2869 | dt=183.4s
+2026-02-19 11:26:35,178 | INFO | [Fold 5] [Retrain] Epoch 8/14 | train_loss=0.2801 | dt=183.3s
+2026-02-19 11:29:39,621 | INFO | [Fold 5] [Retrain] Epoch 9/14 | train_loss=0.2452 | dt=184.4s
+2026-02-19 11:32:43,261 | INFO | [Fold 5] [Retrain] Epoch 10/14 | train_loss=0.2038 | dt=183.6s
+2026-02-19 11:35:47,173 | INFO | [Fold 5] [Retrain] Epoch 11/14 | train_loss=0.2270 | dt=183.9s
+2026-02-19 11:38:51,440 | INFO | [Fold 5] [Retrain] Epoch 12/14 | train_loss=0.1843 | dt=184.3s
+2026-02-19 11:41:55,606 | INFO | [Fold 5] [Retrain] Epoch 13/14 | train_loss=0.1643 | dt=184.2s
+2026-02-19 11:45:00,406 | INFO | [Fold 5] [Retrain] Epoch 14/14 | train_loss=0.1683 | dt=184.8s
+2026-02-19 11:45:00,407 | INFO | Fold 5: retrain concluído em 42.9min
+2026-02-19 11:45:00,407 | INFO | Fold 5: etapa avaliação outer-test (unseen data)...
+2026-02-19 11:45:07,868 | INFO | [Fold 5] Outer-test | loss=0.6527 | auc=0.8879 | acc=0.8218 | f1=0.7954
+2026-02-19 11:45:07,868 | INFO | Fold 5: avaliação concluída em 0.1min
+2026-02-19 11:45:07,868 | INFO | Fold 5/5 finalizado | tempo_fold=107.3min | elapsed=245.6min | ETA_restante≈0.0min
+2026-02-19 11:45:07,868 | INFO | Etapa: agregando métricas e gerando summary.json...
+2026-02-19 11:45:07,869 | INFO | Experimento finalizado em 245.6min | AUC mean=0.8947 std=0.0114
+{'run_dir': '/home/thalles.fontainha/2026-2/results/EX9/20260219-073934', 'summary': {'auc_roc': {'mean': 0.8946638181383312, 'std': 0.011376655743476545, 'n': 5}, 'accuracy': {'mean': 0.7809192938920534, 'std': 0.02410364825247257, 'n': 5}, 'f1_score': {'mean': 0.7252752316273188, 'std': 0.05758403544973446, 'n': 5}, 'precision': {'mean': 0.8308503902032879, 'std': 0.10360977685137349, 'n': 5}, 'recall': {'mean': 0.6780907938702615, 'std': 0.17868624325052798, 'n': 5}, 'n_folds': 5}}

@@ -1,0 +1,6 @@
+{
+  "best_epoch": 5,
+  "best_val_loss": 0.4560044034280711,
+  "epochs_ran": 16,
+  "total_minutes": 31.337270363171896
+}

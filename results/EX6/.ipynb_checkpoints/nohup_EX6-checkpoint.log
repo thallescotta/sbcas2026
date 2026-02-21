@@ -1,0 +1,24 @@
+nohup: ignoring input
+2026-02-19 22:49:06,917 | INFO | Run dir: /home/thalles.fontainha/2026-2/results/EX6/20260219-224906
+2026-02-19 22:49:06,917 | INFO | Device: cuda
+2026-02-19 22:49:06,917 | INFO | CUDA available: True
+2026-02-19 22:49:06,942 | INFO | CUDA device_count: 2
+2026-02-19 22:49:06,953 | INFO | GPU 0: NVIDIA GeForce RTX 2080 Ti
+2026-02-19 22:49:06,953 | INFO | GPU 1: NVIDIA GeForce RTX 2080 Ti
+2026-02-19 22:49:06,953 | INFO | Config multi_gpu=True | gpu_ids=(0, 1) | batch_size=32 | num_workers=4
+2026-02-19 22:49:06,954 | INFO | Etapa: copiando snapshot do código (.py) para auditoria...
+2026-02-19 22:49:06,985 | INFO | Snapshot concluído em 0.0min
+2026-02-19 22:49:06,985 | INFO | Etapa: carregando dataset base (sem transforms)...
+2026-02-19 22:49:34,777 | INFO | Dataset carregado em 0.5min | N=2976 | pos=1317 neg=1659
+2026-02-19 22:49:34,777 | INFO | Etapa: construindo preprocess (CPU) + augmentation_fn (GPU, só treino)...
+2026-02-19 22:49:34,777 | INFO | Preprocess/aug_fn prontos em 0.0min | aug_profile=radiometric | augmentation=True
+2026-02-19 22:49:34,777 | INFO | Etapa: gerando outer folds (n_splits=5)...
+2026-02-19 22:49:34,778 | INFO | Outer folds prontos em 0.0min
+2026-02-19 22:49:34,778 | INFO | Fold 1/5 | outer_train=2380 outer_test=596
+2026-02-19 22:49:34,779 | INFO | Fold 1: etapa inner split (inner_val_frac=0.15)...
+2026-02-19 22:49:34,781 | INFO | Fold 1: inner split concluído em 0.0min | inner_train=2023 inner_val=357
+2026-02-19 22:49:34,781 | INFO | Fold 1: etapa oversampling (treino) | enabled=False...
+2026-02-19 22:49:34,781 | INFO | Fold 1: oversampling concluído em 0.0min | inner_train_os=2023
+2026-02-19 22:49:34,781 | INFO | Fold 1: etapa criando DataLoaders (train/inner_val/outer_test)...
+2026-02-19 22:49:34,781 | INFO | Fold 1: DataLoaders prontos em 0.0min
+2026-02-19 22:49:34,781 | INFO | Fold 1: treino inner (early stopping) | pretrained=True amp=True multi_gpu=True gpu_ids=(0, 1)

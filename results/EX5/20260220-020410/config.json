@@ -1,0 +1,41 @@
+{
+  "exp_name": "EX5",
+  "run_tag": "",
+  "dataset_root": "/home/thalles.fontainha/dataset/OAI-MRI-3DDESS",
+  "cache_in_memory": false,
+  "n_splits": 5,
+  "inner_val_frac": 0.15,
+  "seed": 42,
+  "num_epochs": 60,
+  "early_stop_patience": 10,
+  "batch_size": 32,
+  "num_workers": 4,
+  "pin_memory": true,
+  "amp": true,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "pos_weight_auto": true,
+  "pos_weight_fallback": 2.0,
+  "pretrained": true,
+  "multi_gpu": true,
+  "gpu_ids": [
+    0,
+    1
+  ],
+  "oversample": false,
+  "normalize_minmax": true,
+  "augmentation": true,
+  "aug_profile": "spatial",
+  "flip_axes": [
+    3
+  ],
+  "flip_p": 0.5,
+  "affine_p": 0.5,
+  "affine_rot_deg": 10.0,
+  "affine_trans_frac": 0.05,
+  "noise_p": 0.5,
+  "noise_std": 0.02,
+  "results_dir": "results",
+  "save_code_snapshot": true,
+  "retrain_outer_train": true
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "epoch": 0,
+    "train_loss": 0.5824033956269961,
+    "train_metrics": {},
+    "epoch_seconds": 73.91728401184082
+  },
+  {
+    "epoch": 1,
+    "train_loss": 0.4475283912710241,
+    "train_metrics": {},
+    "epoch_seconds": 74.79340386390686
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.3831351266519443,
+    "train_metrics": {},
+    "epoch_seconds": 74.54188013076782
+  }
+]

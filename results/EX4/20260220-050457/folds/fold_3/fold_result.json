@@ -1,0 +1,11 @@
+{
+  "outer_test_loss": 1.244511748615064,
+  "auc_roc": 0.8636389665124375,
+  "accuracy": 0.6672268907563025,
+  "f1_score": 0.4,
+  "precision": 0.9850746268656716,
+  "recall": 0.2509505703422053,
+  "best_epoch_inner": 0,
+  "fold_idx": 2,
+  "fold_minutes": 33.46542280515035
+}

@@ -1,0 +1,7 @@
+{
+  "best_epoch": 2,
+  "best_val_loss": 0.46386040312548477,
+  "epochs_ran": 13,
+  "total_minutes": 14.054961939652761,
+  "best_ckpt": "/home/thalles.fontainha/2026-2/results/EX10/20260218-201920/folds/fold_1/best_inner.pth"
+}

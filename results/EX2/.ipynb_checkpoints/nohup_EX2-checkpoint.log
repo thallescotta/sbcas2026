@@ -1,0 +1,10 @@
+nohup: ignoring input
+2026-02-18 13:47:53,226 | INFO | Run dir: /home/thalles.fontainha/2026-2/results/EX2/20260218-134753
+2026-02-18 13:47:53,227 | INFO | Device: cuda
+2026-02-18 13:47:53,227 | INFO | CUDA available: True
+2026-02-18 13:47:53,273 | INFO | CUDA device_count: 2
+2026-02-18 13:47:53,289 | INFO | GPU 0: NVIDIA GeForce RTX 2080 Ti
+2026-02-18 13:47:53,289 | INFO | GPU 1: NVIDIA GeForce RTX 2080 Ti
+2026-02-18 13:47:53,289 | INFO | Etapa: copiando snapshot do código (.py) para auditoria...
+2026-02-18 13:47:53,314 | INFO | Snapshot concluído em 0.0min
+2026-02-18 13:47:53,314 | INFO | Etapa: carregando dataset base (sem transforms)...

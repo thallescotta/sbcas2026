@@ -1,0 +1,34 @@
+nohup: ignoring input
+2026-02-19 07:39:34,346 | INFO | Run dir: /home/thalles.fontainha/2026-2/results/EX9/20260219-073934
+2026-02-19 07:39:34,346 | INFO | Device: cuda
+2026-02-19 07:39:34,346 | INFO | CUDA available: True
+2026-02-19 07:39:34,369 | INFO | CUDA device_count: 2
+2026-02-19 07:39:34,380 | INFO | GPU 0: NVIDIA GeForce RTX 2080 Ti
+2026-02-19 07:39:34,380 | INFO | GPU 1: NVIDIA GeForce RTX 2080 Ti
+2026-02-19 07:39:34,380 | INFO | Config multi_gpu=True | gpu_ids=(0, 1) | batch_size=32 | num_workers=4
+2026-02-19 07:39:34,380 | INFO | Etapa: copiando snapshot do código (.py) para auditoria...
+2026-02-19 07:39:34,421 | INFO | Snapshot concluído em 0.0min
+2026-02-19 07:39:34,421 | INFO | Etapa: carregando dataset base (sem transforms)...
+2026-02-19 07:40:08,707 | INFO | Dataset carregado em 0.6min | N=2976 | pos=1317 neg=1659
+2026-02-19 07:40:08,707 | INFO | Etapa: construindo preprocess (CPU) + augmentation_fn (GPU, só treino)...
+2026-02-19 07:40:08,707 | INFO | Preprocess/aug_fn prontos em 0.0min | aug_profile=strength_L3 | augmentation=True
+2026-02-19 07:40:08,707 | INFO | Etapa: gerando outer folds (n_splits=5)...
+2026-02-19 07:40:08,709 | INFO | Outer folds prontos em 0.0min
+2026-02-19 07:40:08,710 | INFO | Fold 1/5 | outer_train=2380 outer_test=596
+2026-02-19 07:40:08,711 | INFO | Fold 1: etapa inner split (inner_val_frac=0.15)...
+2026-02-19 07:40:08,713 | INFO | Fold 1: inner split concluído em 0.0min | inner_train=2023 inner_val=357
+2026-02-19 07:40:08,713 | INFO | Fold 1: etapa oversampling (treino) | enabled=False...
+2026-02-19 07:40:08,713 | INFO | Fold 1: oversampling concluído em 0.0min | inner_train_os=2023
+2026-02-19 07:40:08,713 | INFO | Fold 1: etapa criando DataLoaders (train/inner_val/outer_test)...
+2026-02-19 07:40:08,714 | INFO | Fold 1: DataLoaders prontos em 0.0min
+2026-02-19 07:40:08,722 | INFO | Fold 1: treino inner (early stopping) | pretrained=True amp=True multi_gpu=True gpu_ids=(0, 1)
+2026-02-19 07:41:13,356 | INFO | [Fold 1] Epoch 1/60 | train_loss=0.6010 | val_loss=0.5329 | val_auc=0.8672 | dt=63.8s | ETA=62.7min
+2026-02-19 07:42:10,979 | INFO | [Fold 1] Epoch 2/60 | train_loss=0.4730 | val_loss=0.6054 | val_auc=0.8619 | dt=57.5s | ETA=58.6min
+2026-02-19 07:43:11,036 | INFO | [Fold 1] Epoch 3/60 | train_loss=0.4044 | val_loss=0.6851 | val_auc=0.8881 | dt=60.1s | ETA=57.4min
+2026-02-19 07:44:13,822 | INFO | [Fold 1] Epoch 4/60 | train_loss=0.3742 | val_loss=0.5169 | val_auc=0.8774 | dt=62.8s | ETA=57.0min
+2026-02-19 07:45:15,138 | INFO | [Fold 1] Epoch 5/60 | train_loss=0.3701 | val_loss=0.8421 | val_auc=0.8842 | dt=61.2s | ETA=56.0min
+2026-02-19 07:46:17,582 | INFO | [Fold 1] Epoch 6/60 | train_loss=0.2901 | val_loss=0.6210 | val_auc=0.9010 | dt=62.4s | ETA=55.2min
+2026-02-19 07:47:20,084 | INFO | [Fold 1] Epoch 7/60 | train_loss=0.2458 | val_loss=0.5282 | val_auc=0.8885 | dt=62.5s | ETA=54.3min
+2026-02-19 07:48:24,572 | INFO | [Fold 1] Epoch 8/60 | train_loss=0.2464 | val_loss=0.7648 | val_auc=0.8721 | dt=64.5s | ETA=53.6min
+2026-02-19 07:49:27,974 | INFO | [Fold 1] Epoch 9/60 | train_loss=0.2215 | val_loss=5.1915 | val_auc=0.8619 | dt=63.4s | ETA=52.7min
+2026-02-19 07:50:31,246 | INFO | [Fold 1] Epoch 10/60 | train_loss=0.2033 | val_loss=0.4934 | val_auc=0.8994 | dt=63.3s | ETA=51.8min
